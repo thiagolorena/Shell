@@ -1,0 +1,17 @@
+#VARIAVEIS DE DIRETORIO
+DIR_CFG=/opt/ngin/implantacao/scripts/object_invalids/cfg
+DIR_BIN=/opt/ngin/implantacao/scripts/object_invalids/bin
+DIR_LOG=/opt/ngin/implantacao/scripts/object_invalids/log
+DIR_OUT=/opt/ngin/implantacao/scripts/object_invalids/out
+
+#VARIAVEL DE DATA
+DATE=`date +%Y%m%d_%H%M%S`
+
+#VARIAVEL DE CONFIGURACAO
+CONFIG_FILE_LAB=${DIR_CFG}/DATABASE_LAB.cfg
+CONFIG_FILE_HOMO=${DIR_CFG}/DATABASE_HOMO.cfg
+CONFIG_FILE_OCS=${DIR_CFG}/DATABASE_OCS.cfg
+
+#VARIAVEIS GLOBAIS
+APP=CollectInvalid
+LOGFILE=${DIR_LOG}/${APP}.log
