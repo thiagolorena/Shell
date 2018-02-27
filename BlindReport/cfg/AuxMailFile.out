@@ -1,0 +1,2 @@
+Jan 15 08:00:35 impdctools .sendEmail[8904]: NOTICE => Authentication not supported by the remote SMTP server!
+Jan 15 08:00:35 impdctools .sendEmail[8904]: Email was sent successfully!
