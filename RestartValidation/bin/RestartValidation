@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# NOME
+#   RestarValidation.sh
+#
+# AUTOR
+#   Thiago Lorena
+#
+# DESCRICAO
+#   Efetua a consulta do restart dos processos
+#
+#  Changelog
+#  thiago.lorena  V1.0  16/02/2018 - Criacao das funcoes basicas e consultas no SCP e DSCP 
+
+#Carga de configuracoes
+source ../cfg/RestartValidation.cfg
+source ../func/consulta.fnc
+source ../func/tela.fnc
+
+#Inicio
+Tela
