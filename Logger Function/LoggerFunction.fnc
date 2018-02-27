@@ -1,4 +1,4 @@
-#FUNCOES DE LOG
+#!/bin/sh
 Log_init(){
 echo "[${vThread}] `date +%d%m` `date +%H%M%S` INIT $*" | tee -a $LOGFILE 1>&2
 }
