@@ -1,0 +1,30 @@
+# SVN ID: $Id$
+source ../cfg/func.log
+source ../cfg/.variaveis
+
+ConsolidaHoras(){
+
+
+	Log_info "Iniciando a funcao de consolidacao de horas"
+	sleep 2
+	Log_info "Mes: ${v_Mes}"
+	Log_info "Calculando quantidade de horas, aguarde por gentileza"
+
+	v_TotalHoras=`cat ${d_Out}/${v_Func}_${v_Mes}_${v_Ano}.csv | awk -F "|" '{ c+=$7 } END { print c }'`
+
+	if [[ -z ${v_TotalHoras} ]]; then
+		
+		Log_error "Arquivo de horas nao encontrado, gentileza verificar"
+		Log_error "Fim da funcao de consolidacao"
+		exit 1;
+
+	else
+
+		Log_info "Quantidade de Horas consolidadas para o mes de ${v_Mes}: ${v_TotalHoras}"
+
+	fi
+
+		Log_info "Fim da funcao de consolidacao"
+
+
+}

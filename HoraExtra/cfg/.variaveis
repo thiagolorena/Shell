@@ -1,0 +1,21 @@
+# SVN ID: $Id$
+APP=HoraExtra
+v_Mes=`date | awk '{ print $2 }'`
+v_DiaSemana=`date | awk '{ print $1 }'`
+v_Ano=`date | awk '{ print $NF }'`
+v_HoraInicio=${1}
+v_Dia=`date | awk '{ print $3 }'`
+v_HoraFim=${2}
+v_QtdHoras=${3}
+v_Func="Thiago_Lorena"
+v_Obs=${4}
+
+d_Home=~/Documentos/Scripts          #Alterar conforme necessidade
+d_Bin=${d_Home}/HoraExtra/bin
+d_Log=${d_Home}/HoraExtra/log
+d_Out=${d_Home}/HoraExtra/out
+d_Cfg=${d_Home}/HoraExtra/cfg
+
+a_HoraExtra=${d_Out}/${v_Func}_${v_Mes}_${v_Ano}.csv
+a_LogFile=${d_Log}/${APP}.log
+

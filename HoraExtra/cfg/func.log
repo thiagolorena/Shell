@@ -1,0 +1,16 @@
+# SVN ID: $Id$
+Log_init(){
+echo "${APP}:`date +%d%m` `date +%H%M%S`:INIT:$*;" | tee -a $a_LogFile 1>&2
+}
+Log_info(){
+echo "${APP}:`date +%d%m` `date +%H%M%S`:INFO:$*;" | tee -a $a_LogFile 1>&2
+}
+Log_finish(){
+echo "${APP}:`date +%d%m` `date +%H%M%S`:FINISH:$*;" | tee -a $a_LogFile 1>&2
+}
+Log_error(){
+echo "${APP}:`date +%d%m` `date +%H%M%S`:ERROR:$*;" | tee -a $a_LogFile 1>&2
+}
+Log_warn(){
+echo "${APP}:`date +%d%m` `date +%H%M%S`:WARN:$*;" | tee -a $a_LogFile 1>&2
+}
